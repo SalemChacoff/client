@@ -4,7 +4,7 @@ import routes from '../helpers/routes';
 
 const PublicRoute = (props) => {
     
-    //Se extrae el usuario, y si el usuario es nulo se redirije a login
+    //Se extrae el usuario, y si el usuario es nulo se redirije al login
     const { isLogged } = useAuth();
 
     if(isLogged()) return <Redirect to={routes.projects} />
